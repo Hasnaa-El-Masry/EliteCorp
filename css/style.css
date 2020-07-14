@@ -1,0 +1,706 @@
+/* Pages Main Color
+dark-blue:#08526d
+dark-red:#ec1d24
+*/
+/*  Start Global Style */
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    color: #52626f;
+  
+}
+a
+{
+    text-decoration: none !important;
+    color: #52626f;
+}
+h2,h3
+{
+    color: #242833;
+    letter-spacing: 1.5px;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+section
+{
+    padding: 70px 0;
+    overflow: hidden;
+}
+.overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+/*  End Global Style */
+
+/* Start Grouping Classes */
+.overview p,
+.featured-work p,
+.lastest-post .container > p,
+.pricing-table p
+{
+    color: #555;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+   /*carousel-indicators*/
+header .carousel-indicators,
+.testimonials .carousel-indicators
+{
+    bottom: -50px;
+}
+header .carousel-indicators li,
+.testimonials .carousel-indicators li
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    opacity: 1;
+}
+header .carousel-indicators .active,
+.testimonials .carousel-indicators .active
+{
+    width: 12px;
+    height: 12px;
+    background: #fff
+}
+    /* carousel-nav */
+header .carousel-control-prev,
+header .carousel-control-next,
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next
+{
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    color: #fff;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    transition: background-color .5s ease-in-out;
+}
+header .carousel-control-prev:hover,
+header .carousel-control-next:hover,
+.testimonials .carousel-control-prev:hover,
+.testimonials .carousel-control-next:hover
+{
+    background-color: #ec1d24;
+}
+header .carousel-control-prev,
+.testimonials .carousel-control-prev
+{
+    left: -100px;
+    transition: left .7s ease-in-out;
+}
+header .carousel-control-next,
+.testimonials .carousel-control-next
+{
+    right: -100px;
+    transition: right .7s ease-in-out;
+}
+header:hover .carousel-control-prev,
+.testimonials:hover .carousel-control-prev
+{
+    left: 10px;
+}
+header:hover .carousel-control-next,
+.testimonials:hover .carousel-control-next
+{
+    right: 10px;
+}
+.overview a,
+.why-us a
+{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 0%;
+    border: none;
+    padding:10px 30px;
+    margin-bottom: 20px;
+    background-color: #ec1d24;
+    transition: background-color .3s ease-in;
+}
+.overview a:hover,
+.why-us a:hover
+{
+    background-color: #08526d;
+}
+/* End Grouping Classes */
+
+/* Start Upper Bar */
+.upper-bar
+{
+    background-color: #08526d;
+    overflow: hidden;
+    color:#cadadd;
+}
+.upper-bar .col-sm.top-bar-right,
+.upper-bar .col-sm.top-bar-left
+{
+    margin: 5px 0;
+}
+.upper-bar .top-bar-left span
+{
+  cursor: pointer;
+  transition: color .5s ease-in-out;
+}
+.upper-bar .top-bar-left span:hover
+{
+    color: #fff;
+}
+.upper-bar .top-bar-right span
+{
+   font-size: 12px;
+}
+.upper-bar span.get-quate
+{
+    cursor: pointer;
+    border: 2px solid #ec1d24;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    transition:  background-color .5s ease-in-out;
+}
+.upper-bar span.get-quate:hover
+{
+    background-color: #ec1d24;
+}
+/* End Upper Bar */
+
+/* Start Navbar */
+ /*Brand*/
+.navbar-brand
+{
+    font-size: 45px;
+    font-weight: 600;
+    color:#08526d !important;
+}
+.navbar-brand span
+{
+    color: #ec1d24;
+    font-weight: 300;
+}
+ /*...*/
+ /* navbra-links*/
+.navbar .nav-item a
+{
+    color:#08526d !important;
+    font-weight: 600;
+    margin-right: 5px;
+    transition: color .5s ease-in-out;
+}
+.navbar .nav-item a:hover
+{
+    color: #ec1d24 !important;
+}
+ /*...*/
+ /*navbar dropdown-menu*/
+li.nav-item.dropdown
+{
+    cursor: pointer;
+}
+li.nav-item.dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+.navbar-nav .dropdown-menu 
+{
+  width: 200px;
+  border: none;
+  padding: 5px 0;
+  border-radius: 0; 
+  box-shadow: -1px 5px 5px #eeee
+}
+.navbar-nav  a.dropdown-item
+{
+    font-size: 12px;
+    padding: 20px 20px;
+    color:#088ebe !important;
+    transition:none ;
+}
+.navbar-nav a.dropdown-item:hover
+{
+    background-color: #ec1d24;
+    color: #fff !important;
+}
+/*...*/
+/* End Navbar */
+
+/* Start Header Section */ 
+header
+{
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
+
+  /*inner-carousel*/
+header .carousel-inner
+{
+   display: flex;
+   align-items:center;
+} 
+header .carousel .carousel-item
+{
+    background-size: cover;
+}
+
+header .carousel .carousel-one
+{
+    background-image: url("../images/banner.jpg");
+}
+header .carousel .carousel-two
+{
+    background-image: url("../images/banner.jpg");
+
+}
+header .carousel .carousel-three
+{
+    background-image: url("../images/banner.jpg");
+}
+header h1
+{
+    width: 60%;
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    left: 100px;
+    z-index: 3;
+}
+@media (max-width: 991.98px) 
+{
+    header h1
+    {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+header h1 .highlighted
+{
+    display: inline-block;
+    background-color: #ec1d24;
+    padding: 10px 20px;
+}
+
+/* End Header Section */
+
+
+/* Start Features Section */
+.features i 
+{
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #ec1d24;
+    color: #fff;
+}
+.features h4
+{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.features p
+{
+    color: #ababab;
+    margin-bottom: 20px;
+}
+/* End Features Section */
+
+/* Start Overview Section */
+.overview
+{
+    background-color: #F0F5F7;
+}
+@media(max-width: 991.98px)
+{
+     .overview p
+    {
+        width:100%
+    }
+}
+/* End Overview Section */
+
+/* Start Featured-Work Section */
+.featured-work ul li.active,
+.featured-work ul li.active:hover
+{
+    background-color: #ec1d24;
+    color: #fff;
+    border-color: #ec1d24;
+}
+.featured-work ul li
+{
+    margin-right: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 28px;
+    cursor: pointer;
+    color: #09536F;
+    border: 1px solid #d3dde1;
+    font-weight: 700;  
+}
+.featured-work ul li:hover
+{
+    color: #ec1d24;
+    border-color: #ec1d24;
+}
+.featured-work .col-sm-6,
+.featured-work .col-md-3
+{
+    padding: 0;
+}
+
+/* End Featured-Work Section */
+
+/* Start Latest Post Section */
+
+.lastest-post .card.post 
+{
+     background-clip:none; 
+     border: none; 
+     border-radius: 0; 
+     margin-bottom: 10px;
+}
+.lastest-post .card-img,
+.lastest-post .card-img-top
+{
+ border-radius: 0;
+}
+.lastest-post .card-body
+{
+    padding: 20px 0 0 0;
+}
+.lastest-post .card-body h4
+{
+    font-size: 20px;
+    color: #08526D;
+}
+
+.lastest-post .card-body p
+{
+    color: #646770;
+    margin-top: 10px;
+}
+.lastest-post .card-body a
+{
+    color: #ec1d24;
+    font-weight: 600;
+}
+
+/* End Latest Post Section */
+
+/* Start Teastmonials Section */
+
+/*End Testmonials Section */
+.testimonials 
+{
+    background-image: url('../images/testimonial-bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials .carousel
+{
+    position: relative;
+    z-index: 4;
+}
+
+.testimonials .carousel-inner .carousel-caption
+{
+    position: static;
+    color: #fff;
+}
+.testimonials .carousel-inner .carousel-caption h5
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+.testimonials .carousel-inner .carousel-caption span
+{
+    color: #ddd;
+}
+.testimonials .carousel-inner .carousel-caption p
+{
+    width: 70%;
+    margin: 30px auto;
+    letter-spacing: 2px;
+}
+
+/* Start Price Table Section */
+.pricing-table
+{
+    background-color: #f7f7f7;
+}
+.pricing-table .price-box
+{
+    margin-bottom: 20px;
+   border: none; 
+   border-radius: 0; 
+   padding-top: 30px;
+   padding-bottom: 30px;
+   box-shadow: 1px 1px 5px #c0c0c0;
+   transition: transform .2s ease-in-out;
+}
+.pricing-table .price-box:hover
+{
+   transform: translateY(-20px);
+   box-shadow: 1px 1px 10px #c0c0c0;
+}
+
+.pricing-table .card .card-body h4
+{
+  color: #08526d;
+}
+.pricing-table .card .card-body p
+{
+    color: #ababab;
+}
+.pricing-table .card .card-price
+{
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.pricing-table .card .card-price span.year
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricing-table .card-price.corporate
+{
+ background-color: #ec1d24 !important;   
+ color: #fff;
+}
+.pricing-table .card ul li
+{
+    border: none;
+}
+.pricing-table .card .card-link
+{
+   background-color:#ec1d24;
+   color: #fff;
+   padding: 15px 40px;
+   font-weight: bold;
+   transition: background-color .3s ease-in;
+}
+.pricing-table .card .card-link:hover
+{
+    background-color: #08526d;
+}
+
+/* End Price Table Section */
+
+/* Start Why Us Section */
+.why-us
+{
+    background-color: #08526d;
+    padding: 0;
+}
+.why-us .col-md-6
+{
+    padding: 0;
+}
+.why-us .why-content
+{
+    padding-left: 30px !important;
+}
+.why-us h3
+{
+    color: #fff;
+    padding-top: 50px;
+}
+.why-us p
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: #b5c3c9;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
+
+/* End Why Us Section */
+
+/* Start Counter Section */
+.counter
+{
+    color:#08526D;
+    border-bottom: 1px solid rgb(211, 151, 151);
+
+}
+.counter h5
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.counter span
+{
+  color: #ec1d24;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/* End Counter Section */
+
+/* Start Contact Us Section */
+.contact-us
+{
+    background-color: #ec1d24;
+    color: #fff;
+}
+.contact-us h4
+{
+    font-size: 30px;
+    font-weight: 300;
+}
+@media (max-width: 767.98px)
+{
+    .contact-us h4
+    {
+        margin-bottom: 30px;
+    }
+}
+
+.contact-us a
+{
+    padding: 15px 40px;
+    background-color: #ec1d24;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #FFf;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+}
+.contact-us a:hover
+{
+    background-color: #08526d;
+    color: #fff;
+}
+/* End Contact Us Section */
+
+/* Start Footer */
+footer
+{
+    background-color: #f7f7f7;
+    padding: 100px 0 ;
+}
+footer .website-info p
+{
+    line-height: 25px;
+}
+footer .website-info a.btn,
+footer .contact-info a
+{
+    color: #08526D;
+    padding-left: 0;
+    transition: color .5s ease-in-out;
+}
+footer a.btn:hover,
+footer .contact-info a:hover
+{
+    color: #ec1d24;
+}
+footer h4
+{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+@media (max-width: 991.98px)
+{
+    footer h4
+    {
+        margin-bottom: 10px;
+    }
+
+}
+footer ul li
+{
+    padding-bottom: 10px;
+}
+footer ul li a
+{
+    transition: padding .5s ease-in-out;
+}
+footer ul li a:hover
+{
+    color: #ec1d24;
+    padding-left: 5px;
+}
+footer ul li i 
+{
+    color: #ccc;
+}
+@media (max-width: 991.98px)
+{
+    footer .contact-info p
+    {
+        margin-bottom: 5px !important;
+    }
+
+}
+
+/* End Footer */
+
+/* Start Copy Right */
+.copy-right
+{
+    border-top: 1px solid #ccc;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+.copy-right p
+{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+}
+@media (max-width: 767.98px)
+{
+ .copy-right p
+ {
+     margin-bottom: 20px;
+ }
+}
+
+.copy-right ul
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.copy-right ul li
+{
+    display: inline-block;
+}
+.copy-right i
+{
+    color: #a0a0a0;
+    padding-left: 20px;
+    font-size: 20px;
+    transition: color .5s ease-in-out;
+}
+.copy-right i:hover
+{
+    color: #ec1d24;
+    cursor: pointer;
+}
+/* End Copy Right */
